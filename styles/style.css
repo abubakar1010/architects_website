@@ -79,7 +79,7 @@ nav > ul li a {
   font-weight: 700;
 }
 .banner-title > span {
-  padding: 0px 50px;
+  display: block;
 }
 
 .banner-description {
@@ -115,3 +115,29 @@ nav > ul li a {
 /* finished banner section */
 
 /* finished header section */
+
+/* here is responsive media queries for small device like mobile phone */
+
+@media screen and (max-width: 586px) {
+  .nav-title{
+    font-size: 1.5rem;
+  }
+  nav {
+    flex-direction: column;
+    padding: 0px 10px;
+  }
+  nav > ul li {
+    margin: 0px 5px;
+  }
+  nav > ul {
+    position: relative;
+    right: 20px;
+  }
+  .banner-content {
+    margin: 5px;
+  }
+  .banner-title {
+    padding: 5px;
+    font-size: 2rem;
+  }
+}
