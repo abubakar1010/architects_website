@@ -1,9 +1,64 @@
 /* here is "work sans" font from google font */
 
-  @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap");
 
-  /* here is universal styles */
+/* here is universal styles */
 
-  *{
-    font-family: 'Work Sans', sans-serif;
-  }
+* {
+  font-family: "Work Sans", sans-serif;
+}
+
+/* here is common share style */
+
+/* here is css variable */
+
+:root {
+  --primary-orange-color: rgba(255, 144, 14, 1);
+  --black01: rgba(19, 19, 19, 1);
+  --black02: rgba(66, 66, 66, 1);
+  --black03: rgba(114, 114, 114, 1);
+  --white01: rgba(255, 255, 255, 1);
+}
+
+/* here is header section */
+
+header {
+  background-color: rgba(255, 144, 14, 0.1);
+}
+
+/* here is navigation section */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 65px 120px;
+}
+.nav-title{
+  color: var(--black01);
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 2.82rem;
+  font-weight: 700;
+}
+
+nav > ul {
+  display: flex;
+}
+
+nav > ul li {
+  list-style: none;
+  margin: 0px 20px;
+}
+
+nav > ul li a {
+  text-decoration: none;
+  color: var(--black02);
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+/* finished navigation section */
