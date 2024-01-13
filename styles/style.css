@@ -9,6 +9,18 @@
 }
 
 /* here is common share style */
+.primary-button {
+  border-radius: 8px;
+  background: var(--primary-orange-color);
+  color: var(--white01);
+  padding: 20px 24px;
+  text-align: center;
+  font-family: Work Sans;
+  font-weight: 600;
+  margin: 30px 0px 50px;
+  border: none;
+  cursor: pointer;
+}
 
 /* here is css variable */
 
@@ -91,18 +103,6 @@ nav > ul li a {
   line-height: 26px;
 }
 
-.primary-button {
-  border-radius: 8px;
-  background: var(--primary-orange-color);
-  color: var(--white01);
-  padding: 20px 24px;
-  text-align: center;
-  font-family: Work Sans;
-  font-weight: 600;
-  margin: 30px 0px 50px;
-  border: none;
-  cursor: pointer;
-}
 .banner-section-image {
   max-width: 1400px;
   margin: 0px auto;
@@ -116,10 +116,72 @@ nav > ul li a {
 
 /* finished header section */
 
+/* here is main section */
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* here is features section */
+
+.feature-container {
+  display: flex;
+  gap: 70px;
+  align-items: center;
+  max-width: 1300px;
+  margin: 130px auto;
+}
+.feature-container div {
+  width: 50%;
+}
+
+.feature-image-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.feature-image-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.light-item {
+  color: var(--black03);
+  font-family: Work Sans;
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.dark-item {
+  color: var(--black01);
+  font-family: Work Sans;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.orange-item {
+  color: #ff900e;
+  font-family: Work Sans;
+  font-size: 45px;
+  font-weight: 700;
+  display: block;
+}
+.feature-section-description {
+  color: var(--black03);
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+/* finished features section */
+
 /* here is responsive media queries for small device like mobile phone */
 
 @media screen and (max-width: 586px) {
-  .nav-title{
+  .nav-title {
     font-size: 1.5rem;
   }
   nav {
@@ -145,7 +207,7 @@ nav > ul li a {
 /* here is responsive media queries for medium device like tablet or similar device  */
 
 @media screen and (min-width: 586px) and (max-width: 960px) {
-  .nav-title{
+  .nav-title {
     font-size: 2rem;
   }
   nav {
@@ -166,7 +228,7 @@ nav > ul li a {
     padding: 5px;
     font-size: 3rem;
   }
-  .banner-description{
+  .banner-description {
     padding: 0px 2px;
   }
 }
