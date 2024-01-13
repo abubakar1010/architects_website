@@ -164,6 +164,81 @@ main {
 
 /* finished features section */
 
+/* here is service section */
+
+.service-card{
+  border-radius: 8px;
+background: #FFF;
+box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+padding: 30px;
+margin-bottom: 20px;
+}
+
+.service-section-container{
+  display: flex;
+  gap: 120px;
+}
+
+.service-section-container > div {
+  width: 50%;
+}
+
+.right-image-container img {
+   width: 100%;
+}
+
+.left-title{
+  color: var(--Dark-01, #131313);
+font-family: Work Sans;
+font-size: 45px;
+font-weight: 700;
+margin-bottom: 25px;
+border-left: 5px solid #FF900E;
+padding-left: 20px;
+}
+
+.service-title{
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+.right-image-container{
+  position: relative;
+}
+.experience{
+  border-radius: 8px;
+background: #FF900E;
+color: #fff;
+width: 40%;
+padding: 30px 20px;
+position: absolute;
+bottom: 57px;
+left: -70px;
+}
+
+.year{
+  color: #FFF;
+text-align: center;
+font-family: Work Sans;
+font-size: 3rem;
+font-weight: 700;
+line-height: 70px; 
+margin: 0;
+padding: 0;
+}
+
+.exp{
+  color: #FFF;
+font-family: Work Sans;
+font-size: 25px;
+font-weight: 500;
+line-height: 40px;
+text-align: center;
+margin: 0;
+padding: 0;
+
+
+}
 /* here is facts section */
 
 .facts-description{
@@ -171,6 +246,7 @@ main {
   position: relative;
   bottom: 25px;
 }
+
 
 /* finished facts section */
 
@@ -206,6 +282,46 @@ font-size: 20px;
 font-weight: 600;
 margin: 0;
 }
+
+/* finished card section */
+
+/* here is sponsor section */
+
+.sponsor-description-container{
+  text-align: center;
+
+  margin: 180px 460px 50px;
+}
+
+.sponsor-name{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sponsor-description-container{
+  margin: 50px 0px;
+}
+
+/* finished sponsor section */
+
+/* here is footer section */
+
+footer{
+  max-width: 1400px;
+  margin: 130px auto 45px;
+  border-radius: 8px;
+  background: #FFF4E7;
+  text-align: center;
+  height: 100px;
+}
+
+.footer-description{
+
+  padding-top: 40px;
+}
+
+/* finished footer section */
+
 
 /* here is responsive media queries for small device like mobile phone */
 
@@ -257,6 +373,20 @@ margin: 0;
 
   /* finished feature section */
 
+  /* here is service section */
+
+  .service-section-container{
+    flex-direction: column;
+  }
+  .service-section-container > div {
+    width: 100%;
+  }
+  .experience{
+   position: static;
+  }
+
+  /* finished service section */
+
   /* here is card section */
 
   .card-container{
@@ -271,6 +401,21 @@ margin: 0;
   }
 
   /* finished card section */
+
+  /* here is sponsor section */
+
+  .sponsor-name{
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .sponsor-name img {
+    width: 165px;
+  }
+
+  /* finished sponsor section */
+
 
 }
 
@@ -329,6 +474,19 @@ margin: 0;
 
   /* finished feature section */
 
+  /* here is service section */
+
+  .service-section-container{
+    flex-direction: column;
+  }
+  .service-section-container > div {
+    width: 100%;
+  }
+  .experience{
+    position: static;
+
+  /* finished service section */
+
    /* here is card section */
 
    .card-container{
@@ -347,4 +505,19 @@ margin: 0;
   
   /* finished card section */
 
+  /* here is sponsor section */
+
+  .sponsor-name{
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .sponsor-name img {
+    width: 165px;
+  }
+  /* finished sponsor section */
+
 }
+
+/* completed full projects */
