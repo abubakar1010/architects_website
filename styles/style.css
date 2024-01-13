@@ -164,6 +164,49 @@ main {
 
 /* finished features section */
 
+/* here is facts section */
+
+.facts-description{
+  width: 520px;
+  position: relative;
+  bottom: 25px;
+}
+
+/* finished facts section */
+
+/* here is card section */
+
+.card-container{
+  display: flex;
+  justify-content: space-around;
+  max-width: 1065px;
+  margin: 55px auto;
+  gap: 70px;
+}
+
+.card{
+  border-radius: 8px;
+border: 1px solid var(--primary-orange-color);
+text-align: center;
+flex: 1;
+  padding: 45px 5px ;
+}
+
+.card-stats{
+  color: var(--black02);
+font-size: 45px;
+font-weight: 600;
+margin: 20px 0 5px;
+}
+
+.card-title{
+
+  color: var(--black03);
+font-size: 20px;
+font-weight: 600;
+margin: 0;
+}
+
 /* here is responsive media queries for small device like mobile phone */
 
 @media screen and (max-width: 586px) {
@@ -214,7 +257,23 @@ main {
 
   /* finished feature section */
 
+  /* here is card section */
+
+  .card-container{
+    flex-direction: column;
+  }
+
+  .card{
+    margin: 0px 85px;
+  }
+  .facts-description{
+    width: auto;
+  }
+
+  /* finished card section */
+
 }
+
 
 
 /* here is responsive media queries for medium device like tablet or similar device  */
@@ -269,5 +328,23 @@ main {
   }
 
   /* finished feature section */
+
+   /* here is card section */
+
+   .card-container{
+    display: grid;
+    grid-template-columns: repeat(2,300px);
+    column-gap: 5px;
+    row-gap: 50px;
+  }
+
+  .card{
+    width: 100%;
+  }
+  .facts-description{
+    width: auto;
+  }
+  
+  /* finished card section */
 
 }
